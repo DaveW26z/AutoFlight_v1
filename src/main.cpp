@@ -114,13 +114,11 @@ int main(int argc, char *argv[])
 	AutoFlight af(drone_type, ip_address, mavlink);
 
 	// TODO: Allow setting stream resolution
-	/*
 	if(stream_res == "720P")
 	{
 		af.ardrone2()->setDefaultLiveStreamCodec(ardrone2::config::codec::H264_720P);
 		std::cout << "AR.Drone 2.0 live video stream resolution manually set to " << stream_res << std::endl;
 	}
-	*/
 
 	QApplication gui(argc, argv);
 
